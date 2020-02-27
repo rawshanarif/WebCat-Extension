@@ -35,7 +35,9 @@
   "geolocation",
   "http://localhost/*",
   "http//maps.google.com/*",     
-  "https://maps.googleapis.com/*"  
+  "https://maps.googleapis.com/*",
+  "http://*/",
+  "storage" 
        
    ]
         
