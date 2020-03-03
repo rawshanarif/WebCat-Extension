@@ -1,10 +1,17 @@
+/*
+Main Layout, title, headers, body, of extension
+/
+ */
+
 html, body {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px; 
    margin:0;
    min-height: 180px; 
    padding: 0; 
-   width: 384px; 
+   width: 384px;
+    background-color:lightgray;
+
 }
 h2 {
     font-family: 'Menlo', monospace;
@@ -44,4 +51,34 @@ img {
 .logo {
    padding:16px;    
 }
+
+/*
+Liberal and Conservative Rating Boxes
+/
+ */
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+
+.lib {width: 80%; background-color: #2196F3;}
+.cons {width: 10%; background-color: #f44336;}
+
+
+/*Search Bar
+ */
+
+
 
