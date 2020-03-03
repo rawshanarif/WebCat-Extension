@@ -1,44 +1,46 @@
 {
   "name": "Webcat Launcher",
   "manifest_version": 2,
-  "description": "Quick launch Webcat",  
+  "description": "Quick launch Webcat",
   "version": "1.0",
   "author": "Fred Hawkins",
   "author": "Eric Lamphear",
   "author": "Chloe Allen",
-  "author": "Rawshan Arif",  
-    
-    
+  "author": "Rawshan Arif",
+
+
   "icons": {
-    
+
   "16":"icon.png",
   "48": "icon.png",
   "128":"icon.png"
-    
+
   },
-  
-  
+
+
   "browser_action": {
-   "default_icon": "icon.png", 
+   "default_icon": "icon.png",
    "default_popup": "popup.html",
-   "default_title": "Webcat" 
+   "default_title": "Webcat"
   },
-   
+
   "permissions": [
-  "tabs",      
+  "tabs",
   "activeTab",
   "browsingData",
   "clipboardWrite",
   "webNavigation",
-  "webRequest",     
+  "webRequest",
   "unlimitedStorage",
   "geolocation",
   "http://localhost/*",
-  "http//maps.google.com/*",     
+  "http//maps.google.com/*",
   "https://maps.googleapis.com/*",
-  "http://*/",
-  "storage" 
-       
-   ]
-        
+    "https://patriotpost.us/opinion/68080-impeachment-week-its-ok-to-be-bored-not-ok-to-be-white-2020-01-23",
+    "html.parser"
+
+
+]
+
+
 }
