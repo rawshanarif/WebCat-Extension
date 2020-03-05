@@ -16,6 +16,8 @@
   "128":"icon.png"
 
   },
+  
+  "content_security_policy": "script-src 'self' aaaaaaaaaaaaaaaaaaaaaaaaa; object-src 'self'",
 
 
   "browser_action": {
@@ -23,6 +25,22 @@
    "default_popup": "popup.html",
    "default_title": "Webcat"
   },
+  
+  
+  "content_scripts": [
+    {
+     "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+     "js": ["content.js"],
+     "run_at": "document_idle"
+    }],
+
+   
+    "background": {
+     "scripts": ["background.js"]
+    },
+	
+  
+  
 
   "permissions": [
   "tabs",
@@ -34,12 +52,13 @@
   "unlimitedStorage",
   "geolocation",
   "http://localhost/*",
-  "http//maps.google.com/*",
-  "https://maps.googleapis.com/*",
-    "https://patriotpost.us/opinion/68080-impeachment-week-its-ok-to-be-bored-not-ok-to-be-white-2020-01-23",
-    "html.parser"
-
-
+  "https://maps.googleapis.com/*",  
+  "https://patriotpost.us/opinion/68080-impeachment-week-its-ok-to-be-bored-not-ok-to-be-white-2020-01-23",
+  "http://*/*",
+  "http://127.0.0.1:5000/*",
+  "http://csi4999webcat.azurewebsites.net/",
+  "<all_urls>" 
+           
 ]
 
 
