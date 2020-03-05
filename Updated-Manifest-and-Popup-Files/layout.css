@@ -10,7 +10,7 @@ html, body {
    min-height: 180px; 
    padding: 0; 
    width: 384px;
-    background-color:lightgray;
+   background-color:white;
 
 }
 h2 {
@@ -77,8 +77,11 @@ Liberal and Conservative Rating Boxes
 .cons {width: 100%; background-color: #f44336;}
 
 
-/*Search Bar
+
+
+/*Search Bar Layout 
+
+
+
+
  */
-
-
-
