@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>    
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+               
+                
+		<script type="text/javascript" src="content.js"></script>
+    
+		<title>Webcat - Bias Analyzer</title>
+    
+                
+		<!--StyleSheet-->
+		<link rel="stylesheet" href="layout.css" type="text/css">    
+		
+	</head>
+
+	<body>
+          
+            
+           <!--Loading Graphic appears for 10 seconds on startup to 
+           give time for analysis to load on startup
+           
+            <div class="loader">
+                
+                <img src="images/spinner1-1.svg" alt="Determining Analysis">
+                
+                
+            </div>
+                    
+              -->
+              
+              
+            <!--Title-->
+		<div align=center>
+			<img src="images/WebCatLogo.png" alt="Webcat Logo" width="200px" height="200px">
+			<hr style="border:1px solid black;"/>
+                        <h2><u>Article Bias:</u></h2>	
+		</div> 
+    				
+		
+
+            <!--Container For Ranking Bar. Should call .libs and .cons classes in layout sheet to display output-->
+         
+		<div class="container" align="center">
+			<div class="skills lib">Lean Left</div>
+		</div>
+
+
+		<br><hr style="border:1px solid black;"/><br>
+        
+		<div class= "container" align="left">        
+                    <h2><u>Top Contributing Words/Phrases</u></h2>
+
+		
+                    
+                    
+                 
+                 <!--Script For Displaying Articles Content-->   
+                  <div class="url" id='currentUrl'>
+
+		<script type="text/javascript" src="popup.js"></script>
+
+
+		</div>
+     
+		<hr style="border:1px solid black;"/><br>
+ 
+	</body>
+
+</html>
