@@ -14,6 +14,10 @@ window.onload=function(){
 	console.log(xmlHttp.responseText);
     document.getElementById('currentUrl').innerHTML = xmlHttp.responseText;
     return xmlHttp.responseText;
+      
+    var jsonResponse = JSON.parse(xmlHttp.responseText);
+    console.log(jsonResponse);
+    console.log(jsonResponse[0]);
 
  })
 
