@@ -5,45 +5,57 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-               
-                
-		<script type="text/javascript" src="content.js"></script>
+		<style>
+			* {box-sizing: border-box}
+
+			.container {
+				width: 100%;
+				background-color: #ddd;
+			}
+
+			.skills {
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				color: white;
+			}
+
+			.lib {width: 100%; background-color: #2196F3; font-size:18px}
+			.cons {width: 100%; background-color: #f44336; font-size:18px}
+
+			body {
+				min-height: 500px;
+				min-width: 300px;
+			}
+
+		</style>
+		
+		<!--<script type="text/javascript" src="content.js"></script>-->
     
 		<title>Webcat - Bias Analyzer</title>
     
-                
-		<!--StyleSheet-->
-		<link rel="stylesheet" href="layout.css" type="text/css">    
-		
+		<!--
+		<link rel="stylesheet" href="layout.css" type="text/css"> 
+		<link rel="stylesheet" href="https:///fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+		-->
 	</head>
 
 	<body>
-          
-            
-           <!--Loading Graphic appears for 10 seconds on startup to 
-           give time for analysis to load on startup
-           
-            <div class="loader">
-                
-                <img src="images/spinner1-1.svg" alt="Determining Analysis">
-                
-                
-            </div>
-                    
-              -->
-              
-              
-            <!--Title-->
+     
 		<div align=center>
 			<img src="images/WebCatLogo.png" alt="Webcat Logo" width="200px" height="200px">
 			<hr style="border:1px solid black;"/>
-                        <h2><u>Article Bias:</u></h2>	
+			<h2>Current Article Bias Analysis</h2>	
 		</div> 
     				
-		
+		<!--<div id='currentUrl'>
 
-            <!--Container For Ranking Bar. Should call .libs and .cons classes in layout sheet to display output-->
-         
+		<script type="text/javascript" src="popup.js"></script>
+
+
+		</div>-->
+
 		<div class="container" align="center">
 			<div class="skills lib">Lean Left</div>
 		</div>
@@ -52,22 +64,23 @@
 		<br><hr style="border:1px solid black;"/><br>
         
 		<div class= "container" align="left">        
-                    <h2><u>Top Contributing Words/Phrases</u></h2>
+			<h2>Top Contributing Words/Phrases</h2>
 
-		
-                    
-                    
-                 
-                 <!--Script For Displaying Articles Content-->   
-                  <div class="url" id='currentUrl'>
+			<ul style="list-style-type:disc;">
+				
+				<div id='currentUrl'>
 
 		<script type="text/javascript" src="popup.js"></script>
 
 
 		</div>
+				
+			</ul>        
+		</div>   
      
 		<hr style="border:1px solid black;"/><br>
  
 	</body>
 
 </html>
+
