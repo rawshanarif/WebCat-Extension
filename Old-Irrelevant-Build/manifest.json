@@ -1,0 +1,65 @@
+{
+  "name": "Webcat Launcher",
+  "manifest_version": 2,
+  "description": "Quick launch Webcat",
+  "version": "1.0",
+  "author": "Fred Hawkins",
+  "author": "Eric Lamphear",
+  "author": "Chloe Allen",
+  "author": "Rawshan Arif",
+
+
+  "icons": {
+
+  "16":"icon.png",
+  "48": "icon.png",
+  "128":"icon.png"
+
+  },
+  
+  "content_security_policy": "script-src 'self' aaaaaaaaaaaaaaaaaaaaaaaaa; object-src 'self'",
+
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html",
+   "default_title": "Webcat"
+  },
+  
+  
+  "content_scripts": [
+    {
+     "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+     "js": ["content.js"],
+     "run_at": "document_idle"
+    }],
+
+   
+    "background": {
+     "scripts": ["background.js"]
+    },
+	
+  
+  
+
+  "permissions": [
+  "tabs",
+  "activeTab",
+  "browsingData",
+  "clipboardWrite",
+  "webNavigation",
+  "webRequest",
+  "unlimitedStorage",
+  "geolocation",
+  "http://localhost/*",
+  "https://maps.googleapis.com/*",  
+  "https://patriotpost.us/opinion/68080-impeachment-week-its-ok-to-be-bored-not-ok-to-be-white-2020-01-23",
+  "http://*/*",
+  "http://127.0.0.1:5000/*",
+  "http://csi4999webcat.azurewebsites.net/",
+  "<all_urls>" 
+           
+]
+
+
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Webcat Launcher",
+  "manifest_version": 2,
+  "description": "Quick launch Webcat",  
+  "version": "1.0",
+  "author": "Fred Hawkins",
+  "author": "Eric Lamphear",
+  "author": "Chloe Allen",
+  "author": "Rawshan Arif",  
+    
+    
+  "icons": {
+    
+  "16":"icon.png",
+  "48": "icon.png",
+  "128":"icon.png"
+    
+  },
+  
+  
+  "browser_action": {
+   "default_icon": "icon.png", 
+   "default_popup": "popup.html",
+   "default_title": "Webcat" 
+  },
+   
+    "content_scripts": [
+    {
+     "matches": ["http://*/*", "https://*/*"],
+     "js": ["content.js"],
+     "run_at": "document_idle"
+    }],
+   
+    "background": {
+     "scripts": ["background.js"]
+    },
+	
+  "permissions": [
+  "tabs",      
+  "activeTab",
+  "browsingData",
+  "clipboardWrite",
+  "webNavigation",
+  "webRequest",     
+  "unlimitedStorage",
+  "geolocation",
+  "http://localhost/*",  
+  "http://127.0.0.1:5000/*",
+  "http://csi4999webcat.azurewebsites.net/",
+  "http://*/",
+  "storage" 
+       
+   ]
+        
+}

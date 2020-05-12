@@ -1,0 +1,87 @@
+/*
+Main Layout, title, headers, body, of extension
+/
+ */
+
+html, body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px; 
+   margin:0;
+   min-height: 180px; 
+   padding: 0; 
+   width: 384px;
+   background-color:white;
+
+}
+h2 {
+    font-family: 'Menlo', monospace;
+    font-size: 22px; 
+    font-weight: 400; 
+    margin: 0; 
+    color: #2f5876;
+    
+    
+}
+
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
+h1 {
+ 
+ text-decoration: underline; 
+ text-align:center;
+}
+
+ checked {
+  color: yellow;
+}   
+    
+img {
+    width: 30px;
+}
+
+.modal-header {
+  align-items:center; 
+  border-bottom: 0.5px solid #dadada;   
+  
+}
+  
+.logo {
+   padding:16px;    
+}
+
+/*
+Liberal and Conservative Rating Boxes
+/
+ */
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+
+.lib {width: 100%; background-color: #2196F3;}
+.cons {width: 100%; background-color: #f44336;}
+
+
+
+
+/*Search Bar Layout 
+
+
+
+
+ */
