@@ -1,0 +1,105 @@
+/*
+html, body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px; 
+   margin:0;
+   min-height: 180px; 
+   padding: 0; 
+   width: 384px; 
+}
+
+h2 {
+    font-family: 'Menlo', monospace;
+    font-size: 22px; 
+    font-weight: 400; 
+    margin: 0; 
+    color: #2f5876;
+    
+    
+}
+
+h1 {
+ 
+ text-decoration: underline; 
+ text-align:center;
+}
+
+ checked {
+  color: yellow;
+}   
+    
+img {
+    width: 30px;
+}
+
+.modal-header {
+  align-items:center; 
+  border-bottom: 0.5px solid #dadada;   
+  
+}
+  
+.logo {
+   padding:16px;    
+}
+
+*/
+
+/*
+.loader {
+  align-items: center;
+  background: rgb(255, 255, 255);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
+  animation-name: loader;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both; 
+}
+
+*/
+
+
+.url {
+    font-size:15px; 
+    font-weight:bold; 
+    
+}
+
+
+
+* {box-sizing: border-box}
+
+			.container {
+				width: 100%;
+				background-color: #ddd;
+				font-size:18px;
+				text-decoration: underline;
+				font-weight: bold;
+			}
+
+			.skills {
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				color: white;
+			}
+
+			.lib {width: 100%; background-color: #2196F3; font-size:18px}
+			.cons {width: 100%; background-color: #f44336; font-size:18px}
+
+			body {
+				min-height: 500px;
+				min-width: 300px;
+			}
+
+
